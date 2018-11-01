@@ -261,5 +261,13 @@ public class Orders {
     private int duration;
     private int remaining;
     private int casted;
+
+    public void setrequest(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Object getrequest() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

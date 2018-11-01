@@ -50,30 +50,38 @@ public class MainForm extends javax.swing.JFrame {
         btnAdd = new javax.swing.JButton();
         btnOnGoPro = new javax.swing.JButton();
         desktop1 = new javax.swing.JDesktopPane();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         btnStock = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         desktop2 = new javax.swing.JDesktopPane();
+        jLabel5 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         btnDaiTar = new javax.swing.JButton();
         btnDaiPro = new javax.swing.JButton();
         desktop3 = new javax.swing.JDesktopPane();
+        jLabel6 = new javax.swing.JLabel();
         btnProProg = new javax.swing.JButton();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel5 = new javax.swing.JPanel();
         description = new javax.swing.JButton();
         desktop4 = new javax.swing.JDesktopPane();
+        jLabel7 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         description1 = new javax.swing.JButton();
         Table = new javax.swing.JButton();
         desktop55 = new javax.swing.JDesktopPane();
+        jLabel8 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         description2 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         desktop6 = new javax.swing.JDesktopPane();
+        jLabel9 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         description3 = new javax.swing.JButton();
         desktop7 = new javax.swing.JDesktopPane();
+        jLabel10 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -89,14 +97,23 @@ public class MainForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("ELS Order Management System");
 
+        jLabel1.setBackground(new java.awt.Color(0, 61, 153));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel1.setText("  ELS(PVT) LTD");
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("                                                            ELS(PVT) LTD");
+        jLabel1.setOpaque(true);
 
+        jLabel2.setBackground(new java.awt.Color(0, 61, 153));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
-        jLabel2.setText("Order Management System");
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("                                                                                          Order Management System");
+        jLabel2.setOpaque(true);
 
-        jTabbedPane1.setForeground(new java.awt.Color(0, 153, 153));
+        jTabbedPane1.setBackground(new java.awt.Color(77, 148, 255));
         jTabbedPane1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jTabbedPane1.setOpaque(true);
+
+        jPanel1.setBackground(new java.awt.Color(77, 148, 255));
 
         btnAdd.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         btnAdd.setText("Add New");
@@ -118,16 +135,27 @@ public class MainForm extends javax.swing.JFrame {
 
         desktop1.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel3.setMaximumSize(new java.awt.Dimension(2000, 800));
+        jLabel3.setPreferredSize(new java.awt.Dimension(2000, 800));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/elsordermanagementsystem/slider2.jpg"))); // NOI18N
+
         javax.swing.GroupLayout desktop1Layout = new javax.swing.GroupLayout(desktop1);
         desktop1.setLayout(desktop1Layout);
         desktop1Layout.setHorizontalGroup(
             desktop1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(desktop1Layout.createSequentialGroup()
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 2000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
         );
         desktop1Layout.setVerticalGroup(
             desktop1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 763, Short.MAX_VALUE)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+        desktop1.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        desktop1.setLayer(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -138,7 +166,7 @@ public class MainForm extends javax.swing.JFrame {
                 .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnOnGoPro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1387, Short.MAX_VALUE))
+                .addContainerGap(1510, Short.MAX_VALUE))
             .addComponent(desktop1)
         );
         jPanel1Layout.setVerticalGroup(
@@ -153,6 +181,8 @@ public class MainForm extends javax.swing.JFrame {
         );
 
         jTabbedPane1.addTab("Order Details", jPanel1);
+
+        jPanel3.setBackground(new java.awt.Color(77, 148, 255));
 
         btnStock.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         btnStock.setText("Stock");
@@ -173,16 +203,19 @@ public class MainForm extends javax.swing.JFrame {
 
         desktop2.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/elsordermanagementsystem/slider2.jpg"))); // NOI18N
+
         javax.swing.GroupLayout desktop2Layout = new javax.swing.GroupLayout(desktop2);
         desktop2.setLayout(desktop2Layout);
         desktop2Layout.setHorizontalGroup(
             desktop2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         desktop2Layout.setVerticalGroup(
             desktop2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 761, Short.MAX_VALUE)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+        desktop2.setLayer(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -193,7 +226,7 @@ public class MainForm extends javax.swing.JFrame {
                 .addComponent(btnStock, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1387, Short.MAX_VALUE))
+                .addContainerGap(1510, Short.MAX_VALUE))
             .addComponent(desktop2)
         );
         jPanel3Layout.setVerticalGroup(
@@ -208,6 +241,8 @@ public class MainForm extends javax.swing.JFrame {
         );
 
         jTabbedPane1.addTab("Update", jPanel3);
+
+        jPanel4.setBackground(new java.awt.Color(77, 148, 255));
 
         btnDaiTar.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         btnDaiTar.setText("Daily Target");
@@ -227,16 +262,19 @@ public class MainForm extends javax.swing.JFrame {
 
         desktop3.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/elsordermanagementsystem/slider2.jpg"))); // NOI18N
+
         javax.swing.GroupLayout desktop3Layout = new javax.swing.GroupLayout(desktop3);
         desktop3.setLayout(desktop3Layout);
         desktop3Layout.setHorizontalGroup(
             desktop3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         desktop3Layout.setVerticalGroup(
             desktop3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 761, Short.MAX_VALUE)
+            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+        desktop3.setLayer(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         btnProProg.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         btnProProg.setText("Production Progress");
@@ -258,7 +296,7 @@ public class MainForm extends javax.swing.JFrame {
                 .addComponent(btnDaiPro, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnProProg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1134, Short.MAX_VALUE))
+                .addContainerGap(1257, Short.MAX_VALUE))
             .addComponent(desktop3)
         );
         jPanel4Layout.setVerticalGroup(
@@ -275,6 +313,11 @@ public class MainForm extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Reports", jPanel4);
 
+        jTabbedPane3.setBackground(new java.awt.Color(77, 148, 255));
+        jTabbedPane3.setOpaque(true);
+
+        jPanel5.setBackground(new java.awt.Color(77, 148, 255));
+
         description.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         description.setText("Description");
         description.setToolTipText("");
@@ -286,16 +329,19 @@ public class MainForm extends javax.swing.JFrame {
 
         desktop4.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/elsordermanagementsystem/slider2.jpg"))); // NOI18N
+
         javax.swing.GroupLayout desktop4Layout = new javax.swing.GroupLayout(desktop4);
         desktop4.setLayout(desktop4Layout);
         desktop4Layout.setHorizontalGroup(
             desktop4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         desktop4Layout.setVerticalGroup(
             desktop4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 731, Short.MAX_VALUE)
+            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+        desktop4.setLayer(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -304,7 +350,7 @@ public class MainForm extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(description, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1635, Short.MAX_VALUE))
+                .addContainerGap(1758, Short.MAX_VALUE))
             .addComponent(desktop4)
         );
         jPanel5Layout.setVerticalGroup(
@@ -317,6 +363,8 @@ public class MainForm extends javax.swing.JFrame {
         );
 
         jTabbedPane3.addTab("Description", jPanel5);
+
+        jPanel6.setBackground(new java.awt.Color(77, 148, 255));
 
         description1.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         description1.setText("Table");
@@ -337,27 +385,30 @@ public class MainForm extends javax.swing.JFrame {
 
         desktop55.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/elsordermanagementsystem/slider2.jpg"))); // NOI18N
+
         javax.swing.GroupLayout desktop55Layout = new javax.swing.GroupLayout(desktop55);
         desktop55.setLayout(desktop55Layout);
         desktop55Layout.setHorizontalGroup(
             desktop55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         desktop55Layout.setVerticalGroup(
             desktop55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 731, Short.MAX_VALUE)
+            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+        desktop55.setLayer(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addContainerGap()
                 .addComponent(Table, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addGap(18, 18, 18)
                 .addComponent(description1, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1366, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(desktop55)
         );
         jPanel6Layout.setVerticalGroup(
@@ -367,11 +418,13 @@ public class MainForm extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(description1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Table, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(0, 0, 0)
                 .addComponent(desktop55))
         );
 
         jTabbedPane3.addTab("Ingredient", jPanel6);
+
+        jPanel7.setBackground(new java.awt.Color(77, 148, 255));
 
         description2.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         description2.setText("Other Calculation");
@@ -392,16 +445,19 @@ public class MainForm extends javax.swing.JFrame {
 
         desktop6.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/elsordermanagementsystem/slider2.jpg"))); // NOI18N
+
         javax.swing.GroupLayout desktop6Layout = new javax.swing.GroupLayout(desktop6);
         desktop6.setLayout(desktop6Layout);
         desktop6Layout.setHorizontalGroup(
             desktop6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         desktop6Layout.setVerticalGroup(
             desktop6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 731, Short.MAX_VALUE)
+            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+        desktop6.setLayer(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -412,7 +468,7 @@ public class MainForm extends javax.swing.JFrame {
                 .addComponent(description2, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1382, Short.MAX_VALUE))
+                .addContainerGap(1505, Short.MAX_VALUE))
             .addComponent(desktop6)
         );
         jPanel7Layout.setVerticalGroup(
@@ -428,6 +484,8 @@ public class MainForm extends javax.swing.JFrame {
 
         jTabbedPane3.addTab("Other Calculation", jPanel7);
 
+        jPanel8.setBackground(new java.awt.Color(77, 148, 255));
+
         description3.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         description3.setText("SMS");
         description3.setToolTipText("");
@@ -439,16 +497,19 @@ public class MainForm extends javax.swing.JFrame {
 
         desktop7.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/elsordermanagementsystem/slider2.jpg"))); // NOI18N
+
         javax.swing.GroupLayout desktop7Layout = new javax.swing.GroupLayout(desktop7);
         desktop7.setLayout(desktop7Layout);
         desktop7Layout.setHorizontalGroup(
             desktop7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         desktop7Layout.setVerticalGroup(
             desktop7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 731, Short.MAX_VALUE)
+            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+        desktop7.setLayer(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -457,7 +518,7 @@ public class MainForm extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(description3, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1635, Short.MAX_VALUE))
+                .addContainerGap(1758, Short.MAX_VALUE))
             .addComponent(desktop7)
         );
         jPanel8Layout.setVerticalGroup(
@@ -477,25 +538,19 @@ public class MainForm extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 2016, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1892, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                .addGap(1, 1, 1)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(0, 0, 0)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 864, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33))
         );
@@ -582,6 +637,7 @@ public class MainForm extends javax.swing.JFrame {
        Sms1 nn4 = new Sms1();
        desktop7.add(nn4);
        nn4.setVisible(true);
+         // tebleload();
     }//GEN-LAST:event_description3ActionPerformed
 
     /*
@@ -641,7 +697,15 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -653,4 +717,8 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane3;
     // End of variables declaration//GEN-END:variables
+
+    private void tebleload() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

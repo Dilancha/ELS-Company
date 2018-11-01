@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+  <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="cc" red="cc" type="rgb"/>
+    </Property>
+    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+      <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+        <EmptyBorder/>
+      </Border>
+    </Property>
+    <Property name="name" type="java.lang.String" value="Add New Order" noResource="true"/>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1750, 800]"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel9" min="-2" pref="142" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" pref="142" max="-2" attributes="0"/>
+                          <Component id="jLabel4" min="-2" pref="142" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtOrderDate" min="-2" pref="381" max="-2" attributes="0"/>
+                          <Component id="txtClient" alignment="0" min="-2" pref="381" max="-2" attributes="0"/>
+                          <Component id="ItemNo" alignment="0" min="-2" pref="381" max="-2" attributes="0"/>
+                          <Component id="txtDescription" alignment="0" min="-2" pref="381" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="269" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel5" alignment="1" min="-2" pref="142" max="-2" attributes="0"/>
+                          <Component id="jLabel6" alignment="1" min="-2" pref="142" max="-2" attributes="0"/>
+                          <Component id="jLabel7" alignment="1" min="-2" pref="142" max="-2" attributes="0"/>
+                          <Component id="jLabel8" alignment="1" min="-2" pref="139" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="Rnum" min="-2" pref="69" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="txtQuantity" min="-2" pref="381" max="-2" attributes="0"/>
+                  <Component id="txtLocation" min="-2" pref="381" max="-2" attributes="0"/>
+                  <Component id="txtJobNumber" min="-2" pref="381" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="Update" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                          <Component id="btnAdd" min="-2" pref="116" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="txtDeadline" min="-2" pref="381" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="140" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="1348" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                          <Component id="txtDescription" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="txtJobNumber" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jLabel5" min="-2" pref="43" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="ItemNo" max="32767" attributes="0"/>
+                          <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel6" alignment="1" min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="jLabel9" alignment="0" max="32767" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="txtClient" alignment="3" max="32767" attributes="0"/>
+                              <Component id="jLabel7" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel8" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="jLabel4" min="-2" pref="35" max="-2" attributes="0"/>
+                          <Component id="txtOrderDate" min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="txtLocation" min="-2" pref="35" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txtQuantity" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Component id="txtDeadline" min="-2" pref="33" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Component id="btnAdd" min="-2" pref="36" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="Rnum" min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="Update" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="393" max="-2" attributes="0"/>
+              <EmptySpace pref="31" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="33" red="33" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Description"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="33" red="33" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Item Number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="33" red="33" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Order Date"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="33" red="33" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Job Number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="33" red="33" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Location"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel7">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="33" red="33" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Quantity"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel8">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="33" red="33" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Deadline"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDescription">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDescriptionActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtDescriptionKeyPressed"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtDescriptionKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtJobNumber">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtJobNumberKeyPressed"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtJobNumberKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtLocation">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLocationActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtLocationKeyPressed"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtLocationKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtQuantity">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtQuantityKeyReleased"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtQuantityKeyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAdd">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="ADD"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel9">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Client"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ItemNo">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="297">
+            <StringItem index="0" value="7068-0001-01-F"/>
+            <StringItem index="1" value="7068-0001-02-F"/>
+            <StringItem index="2" value="7068-0001-03-F"/>
+            <StringItem index="3" value="7068-0001-04-F"/>
+            <StringItem index="4" value="7068-0001-05-F"/>
+            <StringItem index="5" value="7068-0001-06-F"/>
+            <StringItem index="6" value="7068-0001-07-F"/>
+            <StringItem index="7" value="7068-0001-08-F"/>
+            <StringItem index="8" value="7068-0001-09-F"/>
+            <StringItem index="9" value="7068-0001-10-F"/>
+            <StringItem index="10" value="7068-0001-11-F"/>
+            <StringItem index="11" value="7068-0001-12-F"/>
+            <StringItem index="12" value="7068-0002-01-F"/>
+            <StringItem index="13" value="7068-0002-02-F"/>
+            <StringItem index="14" value="7068-0002-03-F"/>
+            <StringItem index="15" value="7068-0002-04-F"/>
+            <StringItem index="16" value="7068-0002-05-F"/>
+            <StringItem index="17" value="7068-0002-06-F"/>
+            <StringItem index="18" value="7068-0002-07-F"/>
+            <StringItem index="19" value="7068-0002-08-F"/>
+            <StringItem index="20" value="7068-0002-09-F"/>
+            <StringItem index="21" value="7068-0002-10-F"/>
+            <StringItem index="22" value="7068-0002-11-F"/>
+            <StringItem index="23" value="7068-0002-12-F"/>
+            <StringItem index="24" value="7068-0002-13-F"/>
+            <StringItem index="25" value="7068-0002-14-F"/>
+            <StringItem index="26" value="7068-0002-15-F"/>
+            <StringItem index="27" value="7068-0002-16-F"/>
+            <StringItem index="28" value="7068-0002-17-F"/>
+            <StringItem index="29" value="7068-0002-18-F"/>
+            <StringItem index="30" value="7068-0002-19-F"/>
+            <StringItem index="31" value="7068-0002-20-F"/>
+            <StringItem index="32" value="7068-0002-21-F"/>
+            <StringItem index="33" value="7068-0002-22-F"/>
+            <StringItem index="34" value="7068-0003-01-F"/>
+            <StringItem index="35" value="7068-0003-02-F"/>
+            <StringItem index="36" value="7068-0003-03-F"/>
+            <StringItem index="37" value="7068-0003-04-F"/>
+            <StringItem index="38" value="7068-0003-01-F"/>
+            <StringItem index="39" value="7068-0003-01-F"/>
+            <StringItem index="40" value="7068-0004-01-F"/>
+            <StringItem index="41" value="7068-0004-02-F"/>
+            <StringItem index="42" value="7068-0004-03-F"/>
+            <StringItem index="43" value="7068-0005-01-F"/>
+            <StringItem index="44" value="7068-0005-02-F"/>
+            <StringItem index="45" value="7068-0005-03-F"/>
+            <StringItem index="46" value="7068-0005-04-F"/>
+            <StringItem index="47" value="7068-0005-05-F"/>
+            <StringItem index="48" value="7068-0005-06-F"/>
+            <StringItem index="49" value="7068-0005-07-F"/>
+            <StringItem index="50" value="7068-0005-08-F"/>
+            <StringItem index="51" value="7068-0005-09-F"/>
+            <StringItem index="52" value="7068-0005-10-F"/>
+            <StringItem index="53" value="7068-0005-11-F"/>
+            <StringItem index="54" value="7068-0005-12-F"/>
+            <StringItem index="55" value="7068-0005-13-F"/>
+            <StringItem index="56" value="7068-0005-14-F"/>
+            <StringItem index="57" value="7068-0005-15-F"/>
+            <StringItem index="58" value="7068-0005-16-F"/>
+            <StringItem index="59" value="7068-0005-17-F"/>
+            <StringItem index="60" value="7068-0005-18-F"/>
+            <StringItem index="61" value="7068-0005-19-F"/>
+            <StringItem index="62" value="7068-0005-20-F"/>
+            <StringItem index="63" value="7068-0005-21-F"/>
+            <StringItem index="64" value="7068-0005-22-F"/>
+            <StringItem index="65" value="7068-0005-23-F"/>
+            <StringItem index="66" value="7068-0005-24-F"/>
+            <StringItem index="67" value="7068-0005-25-F"/>
+            <StringItem index="68" value="7068-0005-26-F"/>
+            <StringItem index="69" value="7068-0005-27-F"/>
+            <StringItem index="70" value="7068-0005-28-F"/>
+            <StringItem index="71" value="7068-0005-29-F"/>
+            <StringItem index="72" value="7068-0005-30-F"/>
+            <StringItem index="73" value="7068-0005-31-F"/>
+            <StringItem index="74" value="7068-0005-32-F"/>
+            <StringItem index="75" value="7068-0005-33-F"/>
+            <StringItem index="76" value="7068-0005-34-F"/>
+            <StringItem index="77" value="7068-0005-35-F"/>
+            <StringItem index="78" value="7068-0005-36-F"/>
+            <StringItem index="79" value="7068-0005-37-F"/>
+            <StringItem index="80" value="7068-0005-38-F"/>
+            <StringItem index="81" value="7068-0005-39-F"/>
+            <StringItem index="82" value="7068-0005-40-F"/>
+            <StringItem index="83" value="7068-0005-41-F"/>
+            <StringItem index="84" value="7068-0005-42-F"/>
+            <StringItem index="85" value="7068-0005-43-F"/>
+            <StringItem index="86" value="7068-0005-44-F"/>
+            <StringItem index="87" value="7068-0005-45-F"/>
+            <StringItem index="88" value="7068-0005-46-F"/>
+            <StringItem index="89" value="7068-0005-47-F"/>
+            <StringItem index="90" value="7068-0005-48-F"/>
+            <StringItem index="91" value="7068-0005-49-F"/>
+            <StringItem index="92" value="7068-0005-50-F"/>
+            <StringItem index="93" value="7068-0005-51-F"/>
+            <StringItem index="94" value="7068-0005-52-F"/>
+            <StringItem index="95" value="7068-0005-53-F"/>
+            <StringItem index="96" value="7068-0005-54-F"/>
+            <StringItem index="97" value="7068-0005-55-F"/>
+            <StringItem index="98" value="7068-0005-56-F"/>
+            <StringItem index="99" value="7068-0005-57-F"/>
+            <StringItem index="100" value="7068-0005-58-F"/>
+            <StringItem index="101" value="7068-0005-59-F"/>
+            <StringItem index="102" value="7068-0006-01-F"/>
+            <StringItem index="103" value="7068-0006-02-F"/>
+            <StringItem index="104" value="7068-0006-03-F"/>
+            <StringItem index="105" value="7068-0006-04-F"/>
+            <StringItem index="106" value="7068-0006-05-F"/>
+            <StringItem index="107" value="7068-0006-06-F"/>
+            <StringItem index="108" value="7068-0007-01-F"/>
+            <StringItem index="109" value="7068-0007-02-F"/>
+            <StringItem index="110" value="7068-0007-03-F"/>
+            <StringItem index="111" value="7068-0007-04-F"/>
+            <StringItem index="112" value="7068-0007-05-F"/>
+            <StringItem index="113" value="7068-0007-06-F"/>
+            <StringItem index="114" value="7068-0007-07-F"/>
+            <StringItem index="115" value="7068-0007-08-F"/>
+            <StringItem index="116" value="7068-0007-09-F"/>
+            <StringItem index="117" value="7068-0007-10-F"/>
+            <StringItem index="118" value="7068-0007-11-F"/>
+            <StringItem index="119" value="7068-0007-12-F"/>
+            <StringItem index="120" value="7068-0008-01-F"/>
+            <StringItem index="121" value="7068-0008-02-F"/>
+            <StringItem index="122" value="7068-0008-03-F"/>
+            <StringItem index="123" value="7068-0008-04-F"/>
+            <StringItem index="124" value="7068-0008-05-F"/>
+            <StringItem index="125" value="7068-0008-06-F"/>
+            <StringItem index="126" value="7068-0008-07-F"/>
+            <StringItem index="127" value="7068-0008-08-F"/>
+            <StringItem index="128" value="7068-0008-09-F"/>
+            <StringItem index="129" value="7068-0008-10-F"/>
+            <StringItem index="130" value="7068-0008-11-F"/>
+            <StringItem index="131" value="7068-0008-12-F"/>
+            <StringItem index="132" value="7068-0008-13-F"/>
+            <StringItem index="133" value="7068-0008-14-F"/>
+            <StringItem index="134" value="7068-0008-15-F"/>
+            <StringItem index="135" value="7068-0008-16-F"/>
+            <StringItem index="136" value="7068-0008-17-F"/>
+            <StringItem index="137" value="7068-0008-18-F"/>
+            <StringItem index="138" value="7068-0008-19-F"/>
+            <StringItem index="139" value="7068-0008-20-F"/>
+            <StringItem index="140" value="7068-0008-21-F"/>
+            <StringItem index="141" value="7068-0008-22-F"/>
+            <StringItem index="142" value="7068-0008-23-F"/>
+            <StringItem index="143" value="7068-0008-24-F"/>
+            <StringItem index="144" value="7068-0008-25-F"/>
+            <StringItem index="145" value="7068-0008-26-F"/>
+            <StringItem index="146" value="7068-0008-27-F"/>
+            <StringItem index="147" value="7068-0008-28-F"/>
+            <StringItem index="148" value="7068-0008-29-F"/>
+            <StringItem index="149" value="7068-0008-30-F"/>
+            <StringItem index="150" value="7068-0008-31-F"/>
+            <StringItem index="151" value="7068-0008-32-F"/>
+            <StringItem index="152" value="7068-0008-33-F"/>
+            <StringItem index="153" value="7068-0008-34-F"/>
+            <StringItem index="154" value="7068-0008-35-F"/>
+            <StringItem index="155" value="7068-0008-36-F"/>
+            <StringItem index="156" value="7068-0008-37-F"/>
+            <StringItem index="157" value="7068-0008-38-F"/>
+            <StringItem index="158" value="7068-0008-39-F"/>
+            <StringItem index="159" value="7068-0008-40-F"/>
+            <StringItem index="160" value="7068-0008-41-F"/>
+            <StringItem index="161" value="7068-0008-42-F"/>
+            <StringItem index="162" value="7068-0008-43-F"/>
+            <StringItem index="163" value="7068-0008-44-F"/>
+            <StringItem index="164" value="7068-0008-45-F"/>
+            <StringItem index="165" value="7068-0008-46-F"/>
+            <StringItem index="166" value="7068-0008-47-F"/>
+            <StringItem index="167" value="7068-0008-48-F"/>
+            <StringItem index="168" value="7068-0008-49-F"/>
+            <StringItem index="169" value="7068-0008-50-F"/>
+            <StringItem index="170" value="7068-0008-51-F"/>
+            <StringItem index="171" value="7068-0009-01-F"/>
+            <StringItem index="172" value="7068-0009-02-F"/>
+            <StringItem index="173" value="7068-0009-03-F"/>
+            <StringItem index="174" value="7068-0009-04-F"/>
+            <StringItem index="175" value="7068-0009-05-F"/>
+            <StringItem index="176" value="7068-0009-06-F"/>
+            <StringItem index="177" value="7068-0009-07-F"/>
+            <StringItem index="178" value="7068-0010-01-F"/>
+            <StringItem index="179" value="7068-0010-02-F"/>
+            <StringItem index="180" value="7068-0010-03-F"/>
+            <StringItem index="181" value="7068-0010-04-F"/>
+            <StringItem index="182" value="7068-0010-05-F"/>
+            <StringItem index="183" value="7068-0011-01-F"/>
+            <StringItem index="184" value="7068-0011-02-F"/>
+            <StringItem index="185" value="7068-0011-03-F"/>
+            <StringItem index="186" value="7068-0011-04-F"/>
+            <StringItem index="187" value="7068-0011-05-F"/>
+            <StringItem index="188" value="7068-0011-06-F"/>
+            <StringItem index="189" value="7068-0011-07-F"/>
+            <StringItem index="190" value="7068-0011-08-F"/>
+            <StringItem index="191" value="7068-0011-09-F"/>
+            <StringItem index="192" value="7068-0011-10-F"/>
+            <StringItem index="193" value="7068-0011-11-F"/>
+            <StringItem index="194" value="7068-0011-12-F"/>
+            <StringItem index="195" value="7068-0011-13-F"/>
+            <StringItem index="196" value="7068-0011-14-F"/>
+            <StringItem index="197" value="7068-0011-15-F"/>
+            <StringItem index="198" value="7068-0011-16-F"/>
+            <StringItem index="199" value="7068-0011-17-F"/>
+            <StringItem index="200" value="7068-0011-18-F"/>
+            <StringItem index="201" value="7068-0012-01-F"/>
+            <StringItem index="202" value="7068-0012-01-F"/>
+            <StringItem index="203" value="7068-0012-01-F"/>
+            <StringItem index="204" value="7068-0012-01-F"/>
+            <StringItem index="205" value="7068-0012-01-F"/>
+            <StringItem index="206" value="7068-0012-01-F"/>
+            <StringItem index="207" value="7068-0012-01-F"/>
+            <StringItem index="208" value="7068-0012-01-F"/>
+            <StringItem index="209" value="7068-0012-01-F"/>
+            <StringItem index="210" value="7068-0012-01-F"/>
+            <StringItem index="211" value="7068-0012-01-F"/>
+            <StringItem index="212" value="7068-0012-01-F"/>
+            <StringItem index="213" value="7068-0012-01-F"/>
+            <StringItem index="214" value="7068-0012-01-F"/>
+            <StringItem index="215" value="7068-0012-01-F"/>
+            <StringItem index="216" value="7068-0012-01-F"/>
+            <StringItem index="217" value="7068-0012-01-F"/>
+            <StringItem index="218" value="7068-0013-01-F"/>
+            <StringItem index="219" value="7068-0013-02-F"/>
+            <StringItem index="220" value="7068-0013-03-F"/>
+            <StringItem index="221" value="7068-0013-04-F"/>
+            <StringItem index="222" value="7068-0013-05-F"/>
+            <StringItem index="223" value="7068-0013-06-F"/>
+            <StringItem index="224" value="7068-0013-07-F"/>
+            <StringItem index="225" value="7068-0013-08-F"/>
+            <StringItem index="226" value="7068-0013-09-F"/>
+            <StringItem index="227" value="7068-0013-10-F"/>
+            <StringItem index="228" value="7068-0013-11-F"/>
+            <StringItem index="229" value="7068-0013-12-F"/>
+            <StringItem index="230" value="7068-0013-13-F"/>
+            <StringItem index="231" value="7068-0013-14-F"/>
+            <StringItem index="232" value="7068-0013-15-F"/>
+            <StringItem index="233" value="7068-0013-16-F"/>
+            <StringItem index="234" value="7068-0013-17-F"/>
+            <StringItem index="235" value="7068-0013-18-F"/>
+            <StringItem index="236" value="7068-0014-01-F"/>
+            <StringItem index="237" value="7068-0014-02-F"/>
+            <StringItem index="238" value="7068-0014-03-F"/>
+            <StringItem index="239" value="7068-0014-04-F"/>
+            <StringItem index="240" value="7068-0014-05-F"/>
+            <StringItem index="241" value="7068-0014-06-F"/>
+            <StringItem index="242" value="7068-0014-07-F"/>
+            <StringItem index="243" value="7068-0014-08-F"/>
+            <StringItem index="244" value="7068-0014-09-F"/>
+            <StringItem index="245" value="7068-0014-10-F"/>
+            <StringItem index="246" value="7068-0014-11-F"/>
+            <StringItem index="247" value="7068-0014-12-F"/>
+            <StringItem index="248" value="7068-0014-13-F"/>
+            <StringItem index="249" value="7068-0014-14-F"/>
+            <StringItem index="250" value="7068-0015-01-F"/>
+            <StringItem index="251" value="7068-0015-02-F"/>
+            <StringItem index="252" value="7068-0015-03-F"/>
+            <StringItem index="253" value="7068-0015-04-F"/>
+            <StringItem index="254" value="7068-0015-05-F"/>
+            <StringItem index="255" value="7068-0015-06-F"/>
+            <StringItem index="256" value="7068-0015-07-F"/>
+            <StringItem index="257" value="7068-0015-08-F"/>
+            <StringItem index="258" value="7068-0015-09-F"/>
+            <StringItem index="259" value="7068-0015-10-F"/>
+            <StringItem index="260" value="7068-0015-11-F"/>
+            <StringItem index="261" value="7068-0015-12-F"/>
+            <StringItem index="262" value="7068-0015-13-F"/>
+            <StringItem index="263" value="7068-0015-14-F"/>
+            <StringItem index="264" value="7068-0015-15-F"/>
+            <StringItem index="265" value="7068-0016-01-F"/>
+            <StringItem index="266" value="7068-0016-02-F"/>
+            <StringItem index="267" value="7068-0016-03-F"/>
+            <StringItem index="268" value="7068-0016-04-F"/>
+            <StringItem index="269" value="7068-0016-05-F"/>
+            <StringItem index="270" value="7068-0017-01-F"/>
+            <StringItem index="271" value="7068-0017-02-F"/>
+            <StringItem index="272" value="7068-0017-03-F"/>
+            <StringItem index="273" value="7068-0017-04-F"/>
+            <StringItem index="274" value="7068-0017-05-F"/>
+            <StringItem index="275" value="7068-0017-06-F"/>
+            <StringItem index="276" value="7068-0017-07-F"/>
+            <StringItem index="277" value="7068-0017-08-F"/>
+            <StringItem index="278" value="7068-0017-09-F"/>
+            <StringItem index="279" value="7068-0017-10-F"/>
+            <StringItem index="280" value="7068-0017-11-F"/>
+            <StringItem index="281" value="7068-0017-12-F"/>
+            <StringItem index="282" value="7068-0017-13-F"/>
+            <StringItem index="283" value="7068-0017-14-F"/>
+            <StringItem index="284" value="7068-0017-15-F"/>
+            <StringItem index="285" value="7068-0017-16-F"/>
+            <StringItem index="286" value="7068-0017-17-F"/>
+            <StringItem index="287" value="7068-0017-18-F"/>
+            <StringItem index="288" value="7068-0017-19-F"/>
+            <StringItem index="289" value="7068-0017-20-F"/>
+            <StringItem index="290" value="7068-0017-21-F"/>
+            <StringItem index="291" value="7068-0017-22-F"/>
+            <StringItem index="292" value="7068-0017-23-F"/>
+            <StringItem index="293" value="7068-0017-24-F"/>
+            <StringItem index="294" value="7068-0017-25-F"/>
+            <StringItem index="295" value="7068-0017-26-F"/>
+            <StringItem index="296" value=" "/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ItemNoActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="ItemNoKeyPressed"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="ItemNoKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="txtOrderDate">
+      <Properties>
+        <Property name="dateFormatString" type="java.lang.String" value="yyyy.MM.d"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="txtOrderDatePropertyChange"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtOrderDateKeyPressed"/>
+        <EventHandler event="vetoableChange" listener="java.beans.VetoableChangeListener" parameters="java.beans.PropertyChangeEvent" handler="txtOrderDateVetoableChange"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtClient">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtClientActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtClientKeyPressed"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtClientKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="txtDeadline">
+      <Properties>
+        <Property name="dateFormatString" type="java.lang.String" value="yyyy.MM.d"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="txtDeadlinePropertyChange"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtDeadlineKeyTyped"/>
+        <EventHandler event="vetoableChange" listener="java.beans.VetoableChangeListener" parameters="java.beans.PropertyChangeEvent" handler="txtDeadlineVetoableChange"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jTable1">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder>
+                  <Font PropertyName="font" name="Tahoma" size="18" style="0"/>
+                </TitledBorder>
+              </Border>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="8" rowCount="0">
+                <Column editable="true" title="Job Number" type="java.lang.Object"/>
+                <Column editable="true" title="Client" type="java.lang.Object"/>
+                <Column editable="true" title="Item Number" type="java.lang.Object"/>
+                <Column editable="true" title="Description" type="java.lang.Object"/>
+                <Column editable="true" title="Order Date" type="java.lang.Object"/>
+                <Column editable="true" title="Location" type="java.lang.Object"/>
+                <Column editable="true" title="Quantity" type="java.lang.Object"/>
+                <Column editable="true" title="Deadline" type="java.lang.Object"/>
+              </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="rowHeight" type="int" value="25"/>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTable1MouseClicked"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="Update">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UPDATE"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UpdateActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Rnum">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel3"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

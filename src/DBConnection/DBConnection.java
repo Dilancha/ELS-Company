@@ -31,13 +31,14 @@ public class DBConnection {
     ResultSet rs=null;
     Statement st=null;
     
-    int to_be_cast;
+    Float to_be_cast;
     int delivered_quantity;
+    int daily_target;
     int to_be_deliver;
     int qty;
     int dqty;
     int i=2;
-    
+    int remaining;
     public boolean addOrders(Orders o){
     try{
     System.out.println("Add New Order 1");
@@ -48,15 +49,17 @@ public class DBConnection {
     pst = (PreparedStatement) con.prepareStatement(query);
     pst.setInt(1, o.getRequestNumber());
     pst.setString(2,o.getDescription());
+    //pst.setString(3,o.getItemNo());
     pst.setString(3,o.getItemNo());
-  // pst.setString(3,o.get());
     pst.setString(4, o.getClient());
     pst.setString(5,o.getOrderDate() );
     pst.setString(6, o.getJobNumber());
     pst.setString(7,o.getLocation());
     pst.setInt(8, o.getQuantity());
+    // pst.setString(8, o.getQuantity());
     pst.setString(9, o.getDeadline());
-    pst.setInt(10, o.getToBeCast());
+   // pst.setInt(10, o.getToBeCast());
+     pst.setFloat(10, o.getToBeCast());
     pst.setInt(11, o.getDeliveredQuantity());
     pst.setInt(12, o.getToBeDeliver());
     pst.setInt(13,o.getDailyTarget());
@@ -116,59 +119,120 @@ public class DBConnection {
         }
         }
     }
-    public boolean updateJob(Orders o,int proqty,int delqty){
-        try{
+    public boolean updateJob(String orederNo,String setitemno,int proqty,int delqty){
+        try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            System.out.println("1");
             con=(Connection)DriverManager.getConnection(url,username,password);
-            System.out.println("2");
-            String query1="SELECT * FROM orders WHERE job_number='"+o.getJobNumber()+"' && item_number='"+o.getItemNo()+"'";
-            System.out.println("3");
+            System.out.println(orederNo);
+            System.out.println(setitemno);
+            //String query1="UPDATE orders SET delivered_quantity =? WHERE job_number= '"+orederNo+"' && item_number= '"+setitemno+"'";
+            String query1="SELECT * FROM orders WHERE job_number= '"+orederNo+"' && item_number= '"+setitemno+"'";
             st=(Statement)con.createStatement();
-            System.out.println("4");
             rs=st.executeQuery(query1);
-            System.out.println("5");
             while(rs.next()){
-            to_be_cast=rs.getInt("to_be_cast")-proqty;
-            System.out.println("6");
-            delivered_quantity=rs.getInt("delivered_quantity")+delqty;
-            System.out.println("7");
-            to_be_deliver=rs.getInt("to_be_deliver")-delqty;
+            System.out.println(rs);
+            delivered_quantity = rs.getInt("delivered_quantity") + delqty;
+           // to_be_cast = rs.getInt("to_be_cast")-proqty; 
+            to_be_cast = rs.getFloat("to_be_cast")-proqty;
+            to_be_deliver = rs.getInt("to_be_deliver")-delqty;
+            daily_target = 21;
+           //daily_target = rs.getInt("to_be_deliver")/(OrderDate-Deadline);
             }
-            String query2="UPDATE orders SET to_be_cast=?,delivered_quantity=?,to_be_deliver=? WHERE job_number='"+o.getJobNumber()+"' && item_number='"+o.getItemNo()+"'";
-            System.out.println("8");
-            pst=(PreparedStatement)con.prepareStatement(query2);
-            System.out.println("9");
-            pst.setInt(1, to_be_cast);
-            System.out.println("10");
-            pst.setInt(2, delivered_quantity);
-            System.out.println("11");
-            pst.setInt(3,to_be_deliver);
-            pst.executeUpdate();
-            System.out.println("12");
-            return true;
-        }catch(Exception e){
+            String query2="UPDATE orders SET delivered_quantity=?,to_be_deliver=?,daily_target=?,to_be_cast=? WHERE job_number= '"+orederNo+"' && item_number= '"+setitemno+"'";     
+           
+            
+             pst=(PreparedStatement)con.prepareStatement(query2);
+             //pst.setInt(1, to_be_cast);
+             pst.setInt(1,delivered_quantity);
+             pst.setInt(2,to_be_deliver);
+             pst.setInt(3,daily_target);
+             //pst.setInt(4,to_be_cast);
+              pst.setFloat(4,to_be_cast);
+             pst.executeUpdate();
+            // pst.setInt(2, delivered_quantity);
+     ///////////////////////////////////////////////////////////////////////////////////////////////////////
+           //    String query2="UPDATE orders SET to_be_cast=?,delivered_quantity=?,to_be_deliver=? WHERE job_number='"+o.getJobNumber()+"' && item_number='"+o.getItemNo()+"'";
+             //to_be_cast=rs.getInt("to_be_cast")-proqty;
+           //System.out.println("6");
+           //delivered_quantity=rs.getInt("delivered_quantity")+delqty;
+          System.out.println("7");
+         //to_be_deliver=rs.getInt("to_be_deliver")-delqty;
+        
+//            
+            //pst=(PreparedStatement)con.prepareStatement(query2);
+//            System.out.println("9");
+//            pst.setInt(1, to_be_cast);
+//            System.out.println("10");
+//            pst.setInt(2, delivered_quantity);
+//            System.out.println("11");
+//            pst.setInt(3,to_be_deliver);
+//            pst.executeUpdate();
+//            System.out.println("12");
+//            return true;
+            
+            
+//            st=(Statement)con.createStatement();
+//            rs=st.executeQuery(query1);
+//            System.out.println(rs);   
+        } catch (Exception e) {
             System.out.println("exception->>"+e);
-            return false;
-        }finally{
-        try{
-            if(con!=null){
-            con.close();
-            }
-            if(pst!=null){
-            pst.close();
-            }
-            if(rs!=null){
-            rs.close();
-            }
-            if(st!=null){
-            st.close();
-            }
-        }catch(Exception e){
-            System.out.println("Exception->>"+e);
-        }
-        }
+//           return false;
+        } 
+        return true;
     }
+//    public boolean updateJob(Orders o,int proqty,int delqty){
+//        try{
+//            Class.forName("com.mysql.jdbc.Driver").newInstance();
+//            System.out.println("1");
+//            con=(Connection)DriverManager.getConnection(url,username,password);
+//            System.out.println("2");
+//            String query1="SELECT * FROM orders WHERE job_number='"+o.getJobNumber()+"' && item_number='"+o.getItemNo()+"'";
+//            System.out.println("3");
+//            st=(Statement)con.createStatement();
+//            System.out.println("4");
+//            rs=st.executeQuery(query1);
+//            System.out.println("5");
+//            while(rs.next()){
+//            to_be_cast=rs.getInt("to_be_cast")-proqty;
+//            System.out.println("6");
+//            delivered_quantity=rs.getInt("delivered_quantity")+delqty;
+//            System.out.println("7");
+//            to_be_deliver=rs.getInt("to_be_deliver")-delqty;
+//            }
+//            String query2="UPDATE orders SET to_be_cast=?,delivered_quantity=?,to_be_deliver=? WHERE job_number='"+o.getJobNumber()+"' && item_number='"+o.getItemNo()+"'";
+//            System.out.println("8");
+//            pst=(PreparedStatement)con.prepareStatement(query2);
+//            System.out.println("9");
+//            pst.setInt(1, to_be_cast);
+//            System.out.println("10");
+//            pst.setInt(2, delivered_quantity);
+//            System.out.println("11");
+//            pst.setInt(3,to_be_deliver);
+//            pst.executeUpdate();
+//            System.out.println("12");
+//            return true;
+//        }catch(Exception e){
+//            System.out.println("exception->>"+e);
+//            return false;
+//        }finally{
+//        try{
+//            if(con!=null){
+//            con.close();
+//            }
+//            if(pst!=null){
+//            pst.close();
+//            }
+//            if(rs!=null){
+//            rs.close();
+//            }
+//            if(st!=null){
+//            st.close();
+//            }
+//        }catch(Exception e){
+//            System.out.println("Exception->>"+e);
+//        }
+//        }
+//    }
     public boolean updateStocks(Stocks s){
     try{
         Class.forName("com.mysql.jdbc.Driver").newInstance();
